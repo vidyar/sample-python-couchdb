@@ -3,8 +3,10 @@ from couchdbkit import Server
 class Couch():
     def __init__(self):
         self.server = Server()
-        self.server.delete_db('test')
         self.db = self.server.get_or_create_db('test')
+        if self.db.info()['doc_count'] > 0:
+            self.server.delete_db('test')
+            self.db = self.server.create_db('test')
 
     def populate(self):
         things = [
