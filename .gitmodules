@@ -1,1 +1,4 @@
 
+[submodule "ops-dashboard"]
+	path = ops-dashboard
+	url = git@github.com:vidyar/ops-dashboard.git
