@@ -14,8 +14,7 @@ class Couch():
             {"name": "Lakshmi"},
             {"name": "Ganesha"},
             {"name": "Krishna"},
-            {"name": "Murugan"},
-            {"name": "Shiva"}
+            {"name": "Murugan"}
         ]
         self.db.save_docs(things)
 
