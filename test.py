@@ -8,7 +8,7 @@ class TestSuite(unittest.TestCase):
         couch = Couch()
         couch.populate()
         things = couch.count()
-        self.failIf(things != 6)
+        self.failIf(things != 5)
 
 
 def main():
