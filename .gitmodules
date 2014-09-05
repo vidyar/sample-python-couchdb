@@ -1,2 +1,5 @@
 
 
+[submodule "sample_node_neo4j"]
+	path = sample_node_neo4j
+	url = https://github.com/vidyar/sample_node_neo4j
