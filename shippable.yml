@@ -3,6 +3,8 @@
 python:
   - 2.7
 
+env:
+ - secure: SfAdrq0X3T69FSw1yKd/gPAjgI+Rd56jf/sM1NOM+MdncwglDuLctL8+EuA2/uW0p8TStghksfrUw/Z6eiS/E2sDKnBiG/OfekJDa7Qm7kJiyIvoRiyuSITVsSn/VLhfpCgKAD1qvJq47TcOvogR4ePRNyL9h/ycHpAaRlIAxSGlP1p2GZUo9Ike01BL5VMkK3ZUBYTeVRNkumqXNynWFw8N6O8k5FM7Qq++DoINjnPc82c5+8GEvrhVmFaO4uf9/0POjICthe1jG8V9t4lbtRgc2ToQdETEwqKJ/zwhu+zEJVQKhJpnMN982wwwi09GTwpY+gewNPN37k8AIL5aEQ==
 
 git:
  submodules: false
@@ -18,6 +20,7 @@ install:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - echo $key1
 
 
 script:
